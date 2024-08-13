@@ -1,0 +1,50 @@
+.newsletter-signup {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.newsletter-signup h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+#signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#email {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    display: none; /* Hidden by default */
+}
+
+button[type="submit"] {
+    background-color: #e91e63;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #c2185b;
+}
