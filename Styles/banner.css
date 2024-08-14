@@ -1,5 +1,5 @@
 
-.landing-page {
+.banner-page {
     font-family: Arial, sans-serif;
     width: 100%;
     height: 100%;
@@ -11,8 +11,40 @@
     width: 100%;
     height: 600px;
 }
+/* text */
+.headline {
+    font-size: 50px;
+    margin-top: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    color: rgb(220, 117, 21);
 
-/* banner */
+}
+
+.subheadline {
+    font-size: 25px;
+    margin-top: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    color: black;
+   
+}
+
+
+.discover-btn{
+
+    background-color: aliceblue;
+    color:rgb(220, 117, 21); ;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+}
+
+
+/* banner image */
 .image-container {
     position: relative;
     flex: 1;
@@ -21,7 +53,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 2rem;
+    
     transition: flex 0.5s ease;
     overflow: hidden;
     z-index: 2;
@@ -38,7 +70,7 @@
     height: 100%;
     background-size: cover;
     background-position: center;
-    opacity: 0.6;
+    
     z-index: 1;
 }
 
@@ -58,6 +90,7 @@
     position: relative;
     z-index: 3;
 }
+
 
 /* for tablet */
 @media (min-width: 768px) {
@@ -82,6 +115,8 @@
         flex: 5;
     }
 }
+
+
 
 
 /* for mobile */
