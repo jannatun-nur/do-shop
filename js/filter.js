@@ -1,56 +1,40 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const categoryFilter = document.getElementById('category-filter');
-    const priceFilter = document.getElementById('price-filter');
-    const ratingFilter = document.getElementById('rating-filter');
-    const productCards = document.querySelectorAll('.product-card');
 
-    function filterProducts() {
-        const selectedCategory = categoryFilter.value;
-        const selectedPriceRange = priceFilter.value;
-        const selectedRating = ratingFilter.value;
 
-        productCards.forEach(card => {
-            const category = card.getAttribute('data-category');
-            const price = parseFloat(card.getAttribute('data-price'));
-            const rating = parseFloat(card.getAttribute('data-rating'));
+const priceFilter = document.getElementById('price-filter');
+const ratingFilter = document.getElementById('rating-filter');
+const productCards = document.querySelectorAll('.product-card');
 
-            let isCategoryMatch = selectedCategory === 'all' || category === selectedCategory;
-            let isPriceMatch = false;
-            let isRatingMatch = selectedRating === 'all' || rating >= selectedRating;
+function filterProducts() {
+    const priceValue = priceFilter.value;
+    const ratingValue = parseInt(ratingFilter.value, 10);
 
-            switch (selectedPriceRange) {
-                case 'all':
-                    isPriceMatch = true;
-                    break;
-                case '0-25':
-                    isPriceMatch = price >= 0 && price <= 25;
-                    break;
-                case '25-50':
-                    isPriceMatch = price > 25 && price <= 50;
-                    break;
-                case '50-100':
-                    isPriceMatch = price > 50 && price <= 100;
-                    break;
-                case '100-200':
-                    isPriceMatch = price > 100 && price <= 200;
-                    break;
-                case '200-':
-                    isPriceMatch = price > 200;
-                    break;
-            }
+    productCards.forEach(card => {
+        const cardPrice = parseFloat(card.getAttribute('data-price'));
+        const cardRating = parseInt(card.getAttribute('data-rating'), 10);
 
-            if (isCategoryMatch && isPriceMatch && isRatingMatch) {
-                card.style.display = 'block';
-            } else {
-                card.style.display = 'none';
-            }
-        });
-    }
+        let priceMatch = false;
+        if (priceValue === 'all') {
+            priceMatch = true;
+        } else if (priceValue === '200-') {
+            priceMatch = cardPrice > 200;
+        } else {
+            const [minPrice, maxPrice] = priceValue.split('-').map(Number);
+            priceMatch = cardPrice >= minPrice && cardPrice <= maxPrice;
+        }
 
-    categoryFilter.addEventListener('change', filterProducts);
-    priceFilter.addEventListener('change', filterProducts);
-    ratingFilter.addEventListener('change', filterProducts);
+        const ratingMatch = ratingValue === 0 || cardRating >= ratingValue;
 
-    // Initialize the filter on page load
-    filterProducts();
-});
+        if (priceMatch && ratingMatch) {
+            card.style.display = '';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+
+
+priceFilter.addEventListener('change', filterProducts);
+ratingFilter.addEventListener('change', filterProducts);
+
+
+filterProducts();

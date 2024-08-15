@@ -13,9 +13,11 @@
     <link rel="stylesheet" href="Styles/filter.css">
     <link rel="stylesheet" href="Styles/interactive.css">
     <link rel="stylesheet" href="Styles/signup.css">
-    <title>shopMart</title>
+    <link rel="stylesheet" href="Styles/review.css">
+    <title>Furnica</title>
 </head>
 <body>
+    <!-- banner -->
 
     <div class="banner-page">
         <div class="flex">
@@ -34,15 +36,15 @@
             </div>
 
             <div class="image-container right">
-                <p class="headline">
-                    HAVE YOU EVER TRIED OUR SERVICES ...!?
+                <p class="headline-2">
+                    Luxury Sofas for Less - Comfort Meets Style
                 </p>
                 <p class="subheadline">
-                    Why not try right now for making a safe & happy journey ....!!!
+                    Browse Our Collection to Find the Perfect Match for Your Home
                 </p>
                 <a href="">
-                    <button class="discover-btn bg-gradient-to-r from-indigo-800 via-blue-600 to-blue-400 px-5 py-2 rounded-2xl text-white font-serif text-lg md:text-xl">
-                        DISCOVER MORE
+                    <button class="discover-btn-2">
+                        CHECK HERE
                     </button>
                 </a>
             </div>
@@ -53,141 +55,226 @@
 
 
 
-    <!-- Product filtering -->
 
-    <div class="product-div">
-        <div>
-            <p class="product-text">Let us help you to find out  
-                
-            </p>
+
+   <!-- customer review and about us -->
+ <section class="review-div">
+   <div class="reviews-section">
+    <div class="review-text-container">
+        <div class="review-content">
+            <p class="review-text"></p>
+            <p class="review-author"></p>
+            <p class="review-title"></p>
+        </div>
+        
+    </div>
+    <div class="about-us-container">
+        
+    </div>
+    </div>
+
+    <div class="about-us-container">
+        <p class="tagline">FURNICA</p>
+        <h2 class="main-heading">Some words about our services.</h2>
+        <p class="about-us-text">The age of FURNICA website is 35 years old. We are giving services since 1989. Our services is well-known everywhere
+            . If you are looking for stylish , long-lasting , unique sofa to make more attractive your home , feel free to order from us. We are always 
+            there for you.
+        </p>
+        <div class="stats-container">
+            <div class="stat">
+                <h3>10K+</h3>
+                <p>Products Sold</p>
+            </div>
+            <div class="stat">
+                <h3>35</h3>
+                <p>Years Service</p>
+            </div>
+            <div class="stat">
+                <h3>450</h3>
+                <p>Outlets Worldwide</p>
+            </div>
+        </div>
+        <a href="#" class="learn-more-btn">Learn More <span>&#10140;</span></a>
+    </div>
+    </section>
+
+
+
+      <!-- Product filtering -->
+
+      <div class="product-filters">
+
+        <div class="filter-group">
+            <label for="price-filter">Price:</label>
+            <select id="price-filter">
+                <option value="all">All</option>
+                <option value="0-50">$0 - $50</option>
+                <option value="51-100">$51 - $100</option>
+                <option value="101-150">$101 - $150</option>
+                <option value="151-200">$151 - $200</option>
+                <option value="200-">Above $200</option>
+            </select>
         </div>
 
-        <div class="product-filters">
-            <div class="filter-group">
-                <label class="form" for="category-filter">Category:</label>
-                <select id="category-filter">
-                    <option value="all">All</option>
-                    <option value="electronics">Electronics</option>
-                    <option value="clothing">Clothing</option>
-                    <option value="books">Books</option>
-                    <!-- Add more categories as needed -->
-                </select>
-            </div>
-        
-            <div class="filter-group">
-                <label for="price-filter">Price Range:</label>
-                <select id="price-filter">
-                    <option value="all">All</option>
-                    <option value="0-25">$0 - $25</option>
-                    <option value="25-50">$25 - $50</option>
-                    <option value="50-100">$50 - $100</option>
-                    <option value="100-200">$100 - $200</option>
-                    <option value="200-">$200+</option>
-                </select>
-            </div>
-        
-            <div class="filter-group">
-                <label for="rating-filter">Rating:</label>
-                <select id="rating-filter">
-                    <option value="all">All</option>
-                    <option value="4">4 Stars & Up</option>
-                    <option value="3">3 Stars & Up</option>
-                    <option value="2">2 Stars & Up</option>
-                    <option value="1">1 Star & Up</option>
-                </select>
-            </div>
-             </div>
+        <div class="filter-group">
+            <label for="rating-filter">Rating:</label>
+            <select id="rating-filter">
+                <option value="0">All</option>
+                <option value="1">1 Star & Up</option>
+                <option value="2">2 Stars & Up</option>
+                <option value="3">3 Stars & Up</option>
+                <option value="4">4 Stars & Up</option>
+                <option value="5">5 Stars</option>
+            </select>
+        </div>
     </div>
 
-<div class="product-showcase grid">
-    <div class="product-card" data-category="electronics" data-price="29.99" data-rating="4">
-        <img  src="images/ (1).png" alt="Product  1"  class="card-img" >
-        <h3 class="product-title">Product 1</h3>
-        <p class="product-price">$29.99</p>
-        <p class="product-description">This is a brief description of Product 1.</p>
-    </div>
-    <div class="product-card">
-        <img  src="images/ (2).png" alt="Product  2"  class="card-img" >
-        <h3 class="product-title">Product 2</h3>
-        <p class="product-price">$49.99</p>
-        <p class="product-description">This is a brief description of Product 2.</p>
-    </div>
-    <div class="product-card">
-        <img  src="images/ (3).png" alt="Product  2"  class="card-img" >
-        <h3 class="product-title">Product 2</h3>
-        <p class="product-price">$49.99</p>
-        <p class="product-description">This is a brief description of Product 2.</p>
-    </div>
-    <div class="product-card">
-        <img  src="images/ (4).png" alt="Product  2"  class="card-img" >
-        <h3 class="product-title">Product 2</h3>
-        <p class="product-price">$49.99</p>
-        <p class="product-description">This is a brief description of Product 2.</p>
-    </div>
-    <div class="product-card">
-        <img  src="images/ (5).png" alt="Product  2"  class="card-img" >
-        <h3 class="product-title">Product 2</h3>
-        <p class="product-price">$49.99</p>
-        <p class="product-description">This is a brief description of Product 2.</p>
-    </div>
-    <div class="product-card">
-        <img  src="images/ (6).png" alt="Product  2"  class="card-img" >
-        <h3 class="product-title">Product 2</h3>
-        <p class="product-price">$49.99</p>
-        <p class="product-description">This is a brief description of Product 2.</p>
-    </div>
-    <div class="product-card">
-        <img  src="images/ (7).png" alt="Product  2"  class="card-img" >
-        <h3 class="product-title">Product 2</h3>
-        <p class="product-price">$49.99</p>
-        <p class="product-description">This is a brief description of Product 2.</p>
-    </div>
-    <div class="product-card">
-        <img  src="images/8.png" alt="Product 2" class="card-img" >
-        <h3 class="product-title">Product 2</h3>
-        <p class="product-price">$49.99</p>
-        <p class="product-description">This is a brief description of Product 2.</p>
-    </div>
     
-</div>
+        <div class="product-showcase grid">
+            <div class="product-card" data-price="29.99" data-rating="4">
+                <img src="images/ (1).png" alt="Sofa" class="card-img">
+                <h3 class="product-title">Lawson sofa</h3>
+                <p class="price">$29.99</p>
+                <p class="product-description">A sofa with a simple design, featuring loose back cushions that are separate from the frame. It offers a more relaxed and comfortable seating experience.</p>
+            </div>
+            
+            <div class="product-card"  data-price="35.99" data-rating="5">
+                <img src="images/ (2).png" alt="sofa" class="card-img">
+                <h3 class="product-title">wingback Chair</h3>
+                <p class="price">$35.99</p>
+                <p class="product-description">A chair with a high back and "wings" that extend from the sides, traditionally used near a fireplace.
 
+                </p>
+            </div>
+            
+            <div class="product-card"  data-price="45.99" data-rating="3">
+                <img src="images/ (3).png" alt="Sofa" class="card-img">
+                <h3 class="product-title">Love seat</h3>
+                <p class="price">$45.99</p>
+                <p class="product-description">A smaller version of a sofa, designed to seat two people. It’s often used in smaller spaces or as an accent piece.</p>
+            </div>
+            
+            
+            <div class="product-card"  data-price="55.99" data-rating="4">
+                <img src="images/ (4).png" alt="Sofa" class="card-img">
+                <h3 class="product-title">Convertible Sofa</h3>
+                <p class="price">$55.99</p>
+                <p class="product-description">A chair mounted on a central post, allowing it to rotate 360 degrees. It’s often used in offices or as an accent piece.</p>
+            </div>
+            
+            <div class="product-card"  data-price="65.99" data-rating="5">
+                <img src="images/ (5).png" alt="Sofa" class="card-img">
+                <h3 class="product-title">Love seat</h3>
+                <p class="price">$65.99</p>
+                <p class="product-description">A smaller version of a sofa, designed to seat two people. It’s often used in smaller spaces or as an accent piece.</p>
+            </div>
+            
+            <div class="product-card"  data-price="75.99" data-rating="3">
+                <img src="images/ (6).png" alt="Sofa" class="card-img">
+                <h3 class="product-title">Cabriole Sofa</h3>
+                <p class="price">$75.99</p>
+                <p class="product-description">A sofa with an exposed wooden frame and curved arms that are continuous with the back, often seen in traditional French designs.</p>
+            </div>
+            
+            <div class="product-card"  data-price="85.99" data-rating="4">
+                <img src="images/ (7).png" alt="Sofa" class="card-img">
+                <h3 class="product-title">Italian Royel</h3>
+                <p class="price">$85.99</p>
+                <p class="product-description">EWhile typically larger, some chaise lounges are designed for single-person use and can be considered a single sofa.</p>
+            </div>
+            
+            <div class="product-card"  data-price="95.99" data-rating="5">
+                <img src="images/8.png" alt="Sofa" class="card-img">
+                <h3 class="product-title">Mid-modern Sofa</h3>
+                <p class="price">$95.99</p>
+                <p class="product-description">A comfortable chair with arms, often upholstered and used as a standalone piece of furniture in living rooms or reading nooks.
+
+                </p>
+            </div>
+            
+            <div class="product-card"  data-price="105.99" data-rating="4">
+                <img src="images/sofa9.jpg" alt="Sofa" class="card-img">
+                <h3 class="product-title">Luxury Sofa</h3>
+                <p class="price">$105.99</p>
+                <p class="product-description">A sofa with clean lines, tapered legs, and a minimalist design, inspired by the mid-20th century design movement.</p>
+            </div>
+            
+            <div class="product-card"  data-price="115.99" data-rating="3">
+                <img src="images/sofa10.jpg" alt="Sofa" class="card-img">
+                <h3 class="product-title">Compact Sofa</h3>
+                <p class="price">$115.99</p>
+                <p class="product-description">A low-profile, armless chair with a wide seat, often used in bedrooms or smaller spaces.</p>
+            </div>
+            
+            <div class="product-card"  data-price="125.99" data-rating="5">
+                <img src="images/sofa11.jpg" alt="Sofa" class="card-img">
+                <h3 class="product-title">Wingback sofa</h3>
+                <p class="price">$125.99</p>
+                <p class="product-description">A chair with a high back and "wings" that extend from the sides, traditionally used near a fireplace.
+
+                </p>
+            </div>
+            
+            <div class="product-card"  data-price="125.99" data-rating="5">
+                <img src="images/sofa12.jpg" alt="Sofa" class="card-img">
+                <h3 class="product-title">Club Sofa</h3>
+                <p class="price">$125.99</p>
+                <p class="product-description">This type of chair is known for its deep, comfortable seat and low back. </p>
+            </div>
+            
+          
+            
+        </div>
+   
+    
+   
+  
+   
 
 <!-- interactive product  -->
-<div class="product-showcase grid">
+<div class="offer-div">
     <div class="product-card">
-        <img src="images/re-sofa1.jpg"Product 1">
+        <img class="in-im" src="images/re-sofa1.jpg" alt="sofa">
        
         
-        <!-- Hover Details -->
+        <!-- hover details -->
         <div class="product-hover-details">
+            <p class="inter-text">Club Chair</p>
+            <p class="inter-text-2">$ 40.56</p>
+            <p class="product-discount">20% OFF</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+    
+    <div class="product-card">
+        <img src="images/re-sofa2.jpg" alt="sofa">
+        
+        
+        <!-- hover details -->
+        <div class="product-hover-details">
+            <p class="inter-text">Loaveseat</p>
+            <p class="inter-text-2">$ 49.56</p>
             <p class="product-discount">20% OFF</p>
             <button class="add-to-cart-btn">Add to Cart</button>
         </div>
     </div>
     <!-- Repeat for other products -->
     <div class="product-card">
-        <img src="images/re-sofa2.jpg" alt="Product 1">
-        
-        
-        <!-- Hover Details -->
-        <div class="product-hover-details">
-            <p class="product-discount">20% OFF</p>
-            <button class="add-to-cart-btn">Add to Cart</button>
-        </div>
-    </div>
-    <!-- Repeat for other products -->
-    <div class="product-card">
-        <img src="images/re-sofa3.jpg" alt="Product 1">
+        <img src="images/re-sofa3.jpg" alt="sofa">
        
         
         <!-- Hover Details -->
         <div class="product-hover-details">
+            <p class="inter-text">Wingback Chair</p>
+            <p class="inter-text-2">$ 52.56</p>
             <p class="product-discount">20% OFF</p>
             <button class="add-to-cart-btn">Add to Cart</button>
         </div>
     </div>
     <!-- Repeat for other products -->
 </div>
+
+
 
 
 
@@ -218,7 +305,9 @@
 
     <script src="js/card.js"></script>
     <script src="js/filter.js"></script>
+    <script src="js/review.js"></script>
     <script src="js/interactive.js"></script>
+    <script src="js/dynamicReview.js"></script>
     <script src="js/signup.js"></script>
     
 </body>

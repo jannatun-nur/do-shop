@@ -1,35 +1,36 @@
-/* Container for centering */
+
+
 .signup-div {
     display: flex;
     justify-content: center;
     gap:100px;
-    padding: 0 20px; /* Add some padding for smaller screens */
+    padding: 0 20px;
+    margin-top:100px ;
 }
 
 .sign-img {
-    width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 400px; /* Optional: Set a maximum width */
-    display: block; /* Center the image if it's within a div */
-    margin: 0 auto; /* Center the image horizontally */
+    width: 100%; 
+    height: auto; 
+    max-width: 400px; 
+    display: block;
+    margin: 0 auto; 
 }
 
-/* Newsletter Signup Box */
 
-/* Heading */
+
 .newsletter-signup h2 {
     font-size: 1.8rem;
     margin-bottom: 20px;
 }
 
-/* Signup Form */
+
 #signup-form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Email Input */
+
 #email {
     width: 100%;
     padding: 10px;
@@ -39,15 +40,15 @@
     font-size: 1rem;
 }
 
-/* Error Message */
+
 .error-message {
     color: red;
     font-size: 0.9rem;
     margin-bottom: 10px;
-    display: none; /* Hidden by default */
+    display: none; 
 }
 
-/* Submit Button */
+
 button[type="submit"] {
     background-color: #e91e63;
     color: #fff;
@@ -63,13 +64,15 @@ button[type="submit"]:hover {
     background-color: #c2185b;
 }
 
-/* Responsive Styles */
 
-/* Tablet (min-width: 768px) */
+
+
+
+/* for tablet  */
+
 @media (max-width: 768px) {
     .newsletter-signup {
         padding: 30px;
-        margin-top: 80px;
     }
 
     .newsletter-signup h2 {
@@ -87,21 +90,22 @@ button[type="submit"]:hover {
     }
 }
 
-/* Mobile (max-width: 320px) */
+/* for mobile) */
 
 
 @media (max-width: 320px) {
 
 
-
+   
     .signup-div {
         display:grid;
-      
+        gap:0px;
+        margin-top:0px ;
     }
 
     .sign-img {
-        width:100%; /* Adjust to a more reasonable size */
-        height: auto; /* Maintain aspect ratio */
+        width:100%;
+        height: auto; 
     }
 
     .newsletter-signup h2 {
@@ -119,4 +123,8 @@ button[type="submit"]:hover {
         font-size: 0.9rem;
         margin: 4px 0px;
     }
+    .newsletter-signup {
+        margin-top: 0px;
+    }
+    
 }

@@ -36,7 +36,7 @@ document.getElementById("signup-form").addEventListener("submit", function(event
 });
 
 function validateEmail(email) {
-    // Basic email validation regex
+    
     const check = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return check.test(email);
 }
