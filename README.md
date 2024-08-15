@@ -10,4 +10,5 @@
 ## product/ sofa showing card - filter option with  price, rating.
 ## Interactive card - show offer by hovering.
 ## Newsletter - with email validation.
-## Responsive - for mobile (max-width 320) , tablet (max-width-768).
+## Responsive - for mobile (max-width 320) , tablet (max-width-768), laptop(max-width - 1024).
+
