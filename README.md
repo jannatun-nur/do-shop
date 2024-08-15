@@ -1,7 +1,7 @@
 # FURNICA
 ## E-commerce website
 ### HTML , CSS , Javascript
-#### Live link  :
+#### Live link  : https://magnificent-cactus-535d37.netlify.app/
 
 # Description
 ### Furnica is a frontend sofa selling website .
